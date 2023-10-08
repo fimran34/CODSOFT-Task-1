@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaryalBeautyParlor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class='overflow-x-hidden'>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="container mx-auto">
+        <header>
+            <nav class="flex justify-between">
+                <div class="logo font-bold flex items-center text-blue">Faryal Imran</div>
+                <ul class="navbar flex items-center">
+                    <li><a href="#section1">About us</a></li>
+                    <li><a href="#section2">Deals</a></li>
+                    <li><a href="#section3">Gallery</a></li>
+                    <li><a href="#section4">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <main class="min-h-screen">
+            <section id="section1" class="section1">
+                <div class="flex">
+                    <div class="topleft flex flex-col justify-center px-2">
+                        <h1 class="my-1 text-center">The beauty salon is here for you.</h1>
+                        <p class=" text-center">We provide the best services for you. Customers will feel refreshed and energized
+                            after visiting us. Our calm atmosphere will make you sleepy and happy.
+                        </p>
+                    </div>
+                    <div class="topright flex justify-center">
+                        <img class="beaut" src="beauty.webp" alt="">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="section2" class="section2">
+                <h1 class="text-center my-2">Deals of the day.</h1>
+                <p class="my-2">The prices are given for the deals below.</p>
+                <div class="boxes flex justify-center">
+                    <div class="box">
+                        <h2>Silver</h2>
+                        <ul>
+                            <li class="highlighted">500 SR</li>
+                            <li>Hair styling</li>
+                            <li>Normal Facial</li>
+                            <li>Manicure</li>
+                            <li>Pedicure</li>
+                            <li>Protein Treatment</li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Gold</h2>
+                        <ul>
+                            <li class="highlighted">1000 SR</li>
+                            <li>Paraffin manicure</li>
+                            <li>Party Makeup</li>
+                            <li>Paraffin pedicure</li>
+                            <li>Whitening Facial</li>
+                            <li>Keratin Treatment</li>  
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <h2>Platinum</h2>
+                        <ul>
+                            <li class="highlighted">2000 SR</li>
+                            <li>Paraluxe Frizz Reduction</li>
+                            <li>Balayage</li>
+                            <li>Eyebrows</li>
+                            <li>Ombre Nail Art</li>
+                            <li>Lashes Permanent</li>
+                            <li>Upper Lips</li>
+                            <li>Updo</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </section>
+            
+            <section id="section3" class="section3">
+                <h1>Gallery</h1>
+                <br></br>
+                <img src = "makeup.jpeg"></img>
+                <img src = "makeup1.jpeg"></img>
+                <img src = "nail.jpeg"></img>
+                <img src = "product.jpeg"></img>
+                <img src = "hair.jpg"></img>
+                <img src = "photo.jpeg"></img>
+            </section>
+            
+            <section id="section4" class="section4">
+                <h1>Contact us</h1>
+                <p>Email: faryalbeautyparlor@gmail.com</p>
+                <p>Phone Number: +96656383432</p>
+                <p>Location: 16th Street, Khobar, KSA</p>
+            </section>
+            
+        </main>
+        <footer>
+            All rights reserved 2023
+        </footer>
+
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+</body>
+
+</html>
